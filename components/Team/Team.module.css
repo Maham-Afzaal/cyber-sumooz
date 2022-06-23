@@ -147,11 +147,10 @@
 }
 
 .Button {
-    background-color: #DBFF00;
+    background-color: #DBFF00 !important;
     color: #425B6A !important;
-    background: #D2FF20;
-    box-shadow: 0px 0px 25px #D2FF20;
-    border-radius: 5px;
+    box-shadow: 0px 0px 25px #D2FF20 !important;
+    border-radius: 5px !important;
     /* padding: 10px; */
 }
 
@@ -200,7 +199,7 @@
         padding: 50px 44px 50px 20px;
     }
     .Twitter{
-        min-width: 60px;
+        min-width: 40px;
     }
     .LeftHandle{
         height: 300px;
@@ -209,7 +208,10 @@
         height: 250px;
     }
     .Box{
-        flex-direction: column-reverse;
-        align-items: flex-start;
+        /* flex-direction: column-reverse;
+        align-items: flex-start; */
+    }
+    .Container {
+        margin-top: 20px;
     }
 }

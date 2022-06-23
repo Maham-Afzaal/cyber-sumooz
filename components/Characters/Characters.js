@@ -87,7 +87,7 @@ function Characters() {
                                         {/* <Box className={styles.Ring2}></Box> */}
                                         <Box className={styles.SquareImage}>
                                             <Image
-                                                src="/square.png"
+                                                src="/Square.png"
                                                 alt='1'
                                                 height={50}
                                                 width={50}

@@ -19,8 +19,8 @@ const Intro = () => {
                             <Box>
                                 <Typography variant="h4" sx={{ color: 'white', mb: 2, fontSize: {xs: '20px', sm: '25px', md: '30px '} }}>Meet Po,</Typography>
                                 <Typography variant="body2" sx={{ color: 'white', width: {xs: '90%', md: '70%'}, textAlign: 'justify' }}>Po is the hero of the Cyber Sumoz, the first true P2E PVP Battleverse Game on the Solana Blockchain. Po is a direct descendant of an ancient syndicate of 10,000 sumo warriors who were defeated by an evil entity named Akuma (big chungus mf...). Now Po and his fellow fighters must prevail and destroy Akuma in an exciting new but familiar battleverse gaming experience.</Typography>
-                                <Box className={styles.ButtonShadow}>
-                                    <Button variant="contained" color="info" className={styles.Button}>
+                                <Box className={styles.ButtonShadow} >
+                                    <Button variant="contained" color="info" sx={{mt:3}} className={styles.Button}>
                                         Twitter
                                     </Button>
                                 </Box>

@@ -1,13 +1,13 @@
-.Road{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.Road {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 .RoadMap {
     font-weight: 900;
-    line-height: 116px;
+    /* line-height: 116px; */
     /* text-align: center; */
     color: #FFFFFF;
     text-shadow: 0px 0px 25px rgba(210, 255, 32, 0.5);
@@ -24,7 +24,7 @@
     text-shadow: 0px 0px 25px rgba(1, 228, 243, 0.75);
 }
 
-.Launch{
+.Launch {
     /* position: absolute;
     top: 53%; */
 }
@@ -129,8 +129,9 @@
     .timeline {
         margin: 10px 20px;
     }
-   
+
 }
+
 @media screen and (max-width: 600px) {
 
     /* Place the timelime to the left */
@@ -141,7 +142,7 @@
     /* Full-width containers */
     .container {
         width: 100%;
-        padding-left: 70px;
+        padding-left: 40px;
         padding-right: 25px;
     }
 
@@ -162,7 +163,15 @@
     .right {
         left: 0%;
     }
+
     .content {
         padding: 20px 0px;
+    }
+
+    .Launch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 }

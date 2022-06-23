@@ -8,7 +8,7 @@ import styles from './RoadMap.module.css'
 const RoadMap = () => {
     return (
         <Box sx={{ position: 'relative' }} >
-            <Typography variant="h4" className={styles.RoadMap} sx={{ color: 'white', width: '100%', textAlign: 'center', fontSize: {xs: '25px', sm: '35px', md: '60px '} }}>[ROAD MAP]</Typography>
+            <Typography variant="h4" className={styles.RoadMap} sx={{ color: 'white', width: '100%', textAlign: 'center', fontSize: {xs: '30px', sm: '35px', md: '60px '}, my:2 }}>[ROAD MAP]</Typography>
             <Box className={styles.Road} sx={{flexDirection: {xs: 'column', md: 'row'}}}>
                 <Box className={styles.Launch} sx={{width: {md: '50%', xs: '100%'}, m: 2, mr:3}}>
                     <Typography variant="h4" className={styles.RoadMap2} sx={{ color: 'white',fontSize: {xs: '20px', sm: '30px', md: '40px '} }}>[Launch Beta V1.0]</Typography>

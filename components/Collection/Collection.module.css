@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
 
 
 .Grid {
     overflow: hidden;
+    margin-top: 150px;
 }
 
 .Neon {
     color: #DBFF00;
-    font-family: 'Julee' !important;
-    /* font-family: 'Nunito', sans-serif !important; */
-    font-style: normal;
+    font-family: 'Julee', cursive;
+    /* font-style: italic; */
     font-weight: 400;
     /* font-size: 35px; */
     line-height: 88px;
@@ -18,7 +17,7 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     transform: rotate(-2.15deg);
     position: absolute;
-    top: 16px;
+
 
 }
 
