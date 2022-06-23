@@ -140,7 +140,7 @@ const Collection = () => {
             <Box className={styles.Grid}>
                 <Box className={styles.Container}>
                     <Typography variant="h3" sx={{ color: 'white', fontSize: {xs: '25px', sm: '35px', md: '50px '} }}>[ THE NON-FUNGIES ]</Typography>
-                    <Typography variant="h6" className={styles.Neon} sx={{fontSize: {xs: '30px', sm: '40px', md: '50px '}, top: {xs: '-14px', sm: '15px'}}}>Genesis Collection</Typography>
+                    <Typography variant="h6" className={styles.Neon} sx={{fontSize: {xs: '30px', sm: '40px', md: '50px '}, top: {xs: '8px', sm: '15px'}}}>Genesis Collection</Typography>
                 </Box>
                 <Box className={styles.Container2}>
 
@@ -182,7 +182,7 @@ const Collection = () => {
                 </Box>
                 <Box className={styles.Container3}>
                     <Typography variant="h3" sx={{ color: 'white', fontSize: {xs: '25px', sm: '35px', md: '50px '}, m: '0px 20px' }}>[ SEE WHITE PAPER V1.0 ]</Typography>
-                    <Typography variant="subtitle1" sx={{ color: 'white', width: {md:'60%', xs: '80%'}, my: 2 }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat exas ea commodo consequat nostrud exercitation ullamco.</Typography>
+                    <Typography variant="subtitle1" sx={{ color: 'white', width: {md:'60%', xs: '80%'},fontSize: {xs: '12px', sm: '14px', md: '16px '}, my: 2, textAlign: 'justify' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat exas ea commodo consequat nostrud exercitation ullamco.</Typography>
                     <Box className={styles.ButtonShadow}>
                         <Button variant="contained" color="info" className={styles.Button}>
                             [Coming Soon]
