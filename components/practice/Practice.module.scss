@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+$white : #000000;
+
+@mixin OrderList() {
+    background-color: red;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.body{
+    background-color: white;
+    height: 100vh;
+}
+
+.h1{
+    color: $white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.list {
+    background-color: aqua;
+    .ul{
+        @include OrderList();
+        .li{
+            // color: red;
+        }
+    }
+}

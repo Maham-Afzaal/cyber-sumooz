@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+
+
+
+.Grid {
+    overflow: hidden;
+}
+
+.Neon {
+    color: #DBFF00;
+    font-family: 'Julee' !important;
+    /* font-family: 'Nunito', sans-serif !important; */
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 35px; */
+    line-height: 88px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    transform: rotate(-2.15deg);
+    position: absolute;
+    top: 16px;
+
+}
+
+.Container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container2 {
+    margin: 50px 0px;
+    transform: rotate(-2.79deg);
+}
+
+
+.Collection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100%;
+    margin: 20px 0px;
+    position: relative;
+    /* right: 50%; */
+}
+.slideLeft{
+    animation: first 13s infinite;
+}
+.slideRight{
+    animation: second 13s infinite;
+}
+
+.Collect {
+    border-radius: 10px;
+    animation-direction: alternate;
+    height: 140px;
+    width: 140px;
+
+}
+
+.CollectBox {
+    height: 140px;
+    width: 140px;
+    display: block;
+}
+
+@keyframes first {
+    0% {
+        left: -30%;
+        
+    }
+    50% {
+        left: 30%;
+    }
+    100% {
+        left: -30%;
+    }
+}
+@keyframes second {
+    0% {
+        right: -30%;
+    }
+    50% {
+        right: 30%;
+    }
+    100% {
+        right: -30%;
+    }
+}
+
+.Container3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.ButtonShadow {
+    filter: drop-shadow(0px 0px 10px #DBFF00);
+}
+
+.ButtonClip {
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 86%, 89% 100%, 0 90%, 0 90%, 0% 30%);
+}
+
+.Button {
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 230px;
+    height: 70px;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 86%, 89% 100%, 0 90%, 0 90%, 0% 30%);
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .Neon{
+        top: -14px;
+    }
+}

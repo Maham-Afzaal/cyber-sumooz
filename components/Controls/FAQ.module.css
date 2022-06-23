@@ -1,0 +1,43 @@
+.Shadow{
+    filter: drop-shadow(0px 0px 10px #DBFF00);
+    margin: 40px 0px;
+}
+
+.Accordion {
+    background: linear-gradient(91.01deg, #3B4B54 14.9%, #303334 96.53%);
+    /* border: 5px solid rgba(7, 15, 45, 1); */
+    clip-path: polygon(0 100%, 0 0, 15% 0%, 85% 0%, 100% 0, 99% 84%, 95% 100%, 91% 100%, 24% 100%, 23% 83%, 6% 82%, 5% 100%);
+}
+
+.Yellow {
+    clip-path: polygon(0 100%, 0 0, 15% 0%, 85% 0%, 100% 0, 99% 84%, 95% 100%, 91% 100%, 24% 100%, 23% 83%, 6.3% 82%, 5.3% 100%);
+    background-color: #DBFF00;
+    padding: 3px;
+    border-radius: 6px;
+}
+
+.Question {
+    /* font-size: 44px; */
+    line-height: 77px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 50px rgba(14, 224, 253, 0.5);
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .Accordion {
+        background: linear-gradient(91.01deg, #3B4B54 14.9%, #303334 96.53%);
+        /* border: 5px solid rgba(7, 15, 45, 1); */
+        clip-path: polygon(0 100%, 0 0, 15% 0%, 85% 0%, 100% 0, 99% 84%, 95% 100%, 91% 100%, 40% 100%, 40% 90%, 6.3% 90%, 5.3% 100%);
+    }
+    
+    .Yellow {
+        clip-path: polygon(0 100%, 0 0, 15% 0%, 85% 0%, 100% 0, 99% 84%, 95% 100%, 91% 100%, 40% 100%, 40% 90%, 6.3% 90%, 5.3% 100%);
+        background-color: #DBFF00;
+        padding: 3px;
+        border-radius: 6px;
+    }
+    
+}

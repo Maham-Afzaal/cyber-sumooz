@@ -1,0 +1,195 @@
+.Characters {
+    margin-top: 150px;
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 100px rgba(0, 209, 255, 0.75));
+    background-color: linear-gradient(96.81deg, #2E353C 44.67%, #364049 90.52%);
+
+}
+
+
+.CharacterBox1 {
+    background-color: #0FDDEC;
+    clip-path: polygon(0 26%, 0 9%, 65% 9%, 79% 0, 100% 4%, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 9% 100%, 4% 95%, 0 90%);
+    background-color: linear-gradient(96.81deg, #2E353C 44.67%, #364049 90.52%);
+    padding: 3px;
+    padding-top: 20px;
+}
+
+.CharacterBox {
+    position: relative;
+    background-color: #2E363D;
+    clip-path: polygon(0 26%, 0 9%, 65% 9%, 79% 0, 100% 4%, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 9% 100%, 4% 95%, 0 90%);
+}
+
+.Status {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    background: linear-gradient(93.98deg, #2DEADE 30.29%, #15C8EA 45.94%, #0AB8EF 57.21%);
+    box-shadow: 0px 0px 25px #15C8EA;
+    border-radius: 5px;
+    padding: 5px;
+    border: 3px solid #02DAF8;
+    z-index: 10;
+    width: 40%;
+}
+
+.Ability {
+    margin-top: 30px;
+    background: linear-gradient(151.64deg, #3E5258 3.51%, #475869 67.88%);
+    padding: 20px 20px 20px 40px;
+    width: fit-content;
+    clip-path: polygon(100% 0, 100% 5%, 97% 5%, 97% 75%, 100% 75%, 100% 100%, 0 100%, 0 0)
+}
+
+.AbilityDetail {
+    margin: 10px 20px 10px 30px;
+}
+
+
+.GridLines {
+    background-size: 25px 25px;
+    background-image:
+        linear-gradient(to right, #3A444D .5px, transparent 1px),
+        linear-gradient(to bottom, #3A444D .5px, transparent 1px);
+}
+
+.CharacterList {
+    height: 100%;
+}
+
+.Collection {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    height: 100%;
+}
+
+.ImageStyle {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 100% 100%, 10% 100%, 0 91%, 0 0);
+    border-top-left-radius: 8px;
+}
+
+.Collect {
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+
+.CollectBox:hover {
+    box-shadow: 0px 0px 15px #01E1FF;
+}
+
+.CollectBox {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: transparent;
+    margin: 5px;
+    display: block;
+}
+
+.SelectCharacter {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.selectedImage {
+    /* border: 2px solid black; */
+}
+
+.SquareImage {
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    animation: Ring3 3s linear infinite;
+}
+
+@keyframes Ring3 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.Ring {
+    /* display: inline-block; */
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    margin: 0px;
+    border-radius: 50%;
+    border: 3px solid #DBFF00;
+    border-color: #DBFF00 transparent #DBFF00 transparent;
+    animation: Ring 3s linear infinite;
+}
+
+@keyframes Ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Ring2 {
+    /* display: inline-block; */
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    margin: 0px;
+    border-radius: 50%;
+    border: 3px solid #DBFF00;
+    border-color: #DBFF00 transparent #DBFF00 transparent;
+    animation: Ring2 1.5s linear infinite;
+}
+
+
+@keyframes Ring2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Note {
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.NoteDetail {
+    text-align: center;
+    width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+.Collection{
+    margin-top: 50px;
+}
+.Status{
+    left: 20px;
+    width: 80%;
+}
+}

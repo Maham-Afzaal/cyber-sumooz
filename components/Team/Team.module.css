@@ -1,0 +1,215 @@
+.Container {
+    margin-top: 60px;
+}
+
+.FlexBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    position: relative;
+}
+
+.Sumo {
+    width: 40%;
+    z-index: 100;
+}
+
+.DetailBox {
+    width: 50%;
+    filter: drop-shadow(0px 0px 10px #01E9F8);
+    z-index: 2;
+}
+
+.Background {
+    background: linear-gradient(148.02deg, rgba(137, 230, 251, 0.5) 16.91%, rgba(175, 214, 223, 0.5) 97.53%);
+    box-shadow: 0px 0px 15px rgba(37, 229, 255, 0.75);
+    height: 310px;
+    width: 97%;
+    /* right: 40px; */
+    position: absolute;
+    z-index: 1;
+}
+
+.BlueBox {
+    background-color: #01E9F8;
+    padding: 5px 5px 5px 5px;
+    clip-path: polygon(0 5%, 21% 0, 27% 5%, 100% 4%, 99% 15%, 93% 16%, 93% 70%, 98% 72%, 95% 100%, 11% 100%, 0 90%, 0 28%);
+}
+
+.GreyBox {
+    background-color: #415D6D;
+    clip-path: polygon(0 5%, 21% 0, 27% 5%, 100% 4%, 99% 15%, 93% 16%, 93% 70%, 98% 72%, 95% 100%, 11% 100%, 0 90%, 0 28%);
+    padding: 50px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.User {
+    font-weight: 800;
+    /* font-size: 36px; */
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #00E0FF;
+    text-shadow: 0px 0px 10px #00E0FF;
+    transform: rotate(-2.06deg);
+    margin: 0px 0px 20px 0px;
+    align-self: flex-start;
+}
+
+.Box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    align-self: start !important;
+    width: 100%;
+}
+
+.Lab {
+    font-weight: 900;
+    /* font-size: 36px; */
+    line-height: 44px;
+    color: #D4E1E3;
+}
+
+.Lab2 {
+    font-weight: 700;
+    /* font-size: 24px; */
+    line-height: 29px;
+    color: #D4E1E3;
+    padding-top: 0px !important;
+}
+
+.Twitter {
+    /* align-self: end !important; */
+    background: linear-gradient(149.74deg, #20C9FF 10.73%, #00F0FF 88.87%);
+    border: 1px solid #13D9FF;
+    box-shadow: 0px 0px 25px #20C9FF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 160px;
+    padding: 10px;
+}
+
+.LeftHandle {
+    width: 100px;
+    height: 340px;
+    z-index: 2;
+    filter: drop-shadow(0px 0px 10px #01E9F8);
+    border-radius: 12px;
+}
+
+.LeftHandleGrey {
+    height: 100%;
+    background-color: #415D6D;
+    clip-path: polygon(8% 13%, 0 0, 100% 0, 100% 100%, 0 100%, 8% 88%, 50% 88%, 50% 13%);
+}
+
+.LeftHandleBlue {
+    height: 100%;
+    background-color: #01E9F8;
+    padding: 4px 4px 4px 4px;
+    clip-path: polygon(8% 13%, 0 0, 100% 0, 100% 100%, 0 100%, 8% 88%, 50% 88%, 50% 13%);
+}
+
+.GreyCircle {
+    width: 30px;
+    height: 30px;
+    background: rgba(102, 113, 120, 1);
+    border: 2px solid rgba(119, 133, 141, 1);
+    border-radius: 50%;
+}
+
+.Circle1 {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.Circle2 {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+
+.Circle3 {
+    position: absolute;
+    right: 15px;
+    top: 23px;
+}
+
+.Button {
+    background-color: #DBFF00;
+    color: #425B6A !important;
+    background: #D2FF20;
+    box-shadow: 0px 0px 25px #D2FF20;
+    border-radius: 5px;
+    /* padding: 10px; */
+}
+
+.Button:hover {
+    background-color: #ddff00d8;
+}
+
+.Note {
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.NoteDetail {
+    text-align: center;
+    width: 70%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .Background {
+        height: 300px;
+        width: 300px;
+        top: 123px;
+        transform: rotate(270deg);
+        /* position: relative; */
+    }
+    .FlexBox {
+        flex-direction: column-reverse;
+    }
+    .LeftHandle{
+        transform: rotate(270deg);
+        /* height: 300%; */
+    }
+    .DetailBox{
+        width: 89%;
+    }
+}
+@media screen and (max-width: 600px) {
+    
+    .DetailBox{
+        width: 100%;
+    }
+    .GreyBox{
+        padding: 50px 44px 50px 20px;
+    }
+    .Twitter{
+        min-width: 60px;
+    }
+    .LeftHandle{
+        height: 300px;
+    }
+    .Background{
+        height: 250px;
+    }
+    .Box{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,83 @@
+.Shadow {
+    filter: drop-shadow(0px -10px 10px #00CDFA);
+    margin-top: 150px;
+}
+
+
+.FlexBox{
+    background: linear-gradient(96.73deg, #3D5867 5.12%, #473C43 86.39%);
+    clip-path: polygon(0 6%, 15% 0, 16% 7%, 98% 14%, 100% 23%, 100% 100%, 83% 100%, 59% 100%, 34% 100%, 22% 100%, 10% 100%, 0 100%);
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.Blue {
+    padding: 4px 0px 0px 0px;
+    background-color: #00CDFA;
+    clip-path: polygon(0 6%, 15% 0, 16% 7%, 98% 14%, 100% 23%, 100% 100%, 83% 100%, 59% 100%, 34% 100%, 22% 100%, 10% 100%, 0 100%);
+}
+
+
+.Heading {
+    font-weight: 900;
+    /* font-size: 60px; */
+    line-height: 73px;
+    /* identical to box height */
+    color: #FFFFFF;
+    text-shadow: 0px 0px 25px rgba(177, 254, 15, 0.25);
+}
+
+
+.Box {
+    width: 50%;
+    padding: 20px;
+    position: relative;
+}
+
+.Box2{
+    position: relative;
+}
+
+.Sumo {
+    /* width: 40%; */
+    position: absolute;
+    right: 0px;
+    top: 20%;
+}
+
+.ButtonBox{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.ButtonShadow {
+    filter: drop-shadow(0px 0px 10px #DBFF00);
+}
+.ButtonShadow2 {
+    filter: drop-shadow(0px 0px 10px #00CDFA);
+}
+.Button {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+    width: 200px;
+    height: 60px;
+    margin-top: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 86%, 89% 100%, 0 90%, 0 90%, 0% 30%);
+    display: inline;
+    
+}
+.Button2 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+    width: 200px;
+    height: 60px;
+    display: inline;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 86%, 89% 100%, 0 90%, 0 90%, 0% 30%);
+    margin-top: 20px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
