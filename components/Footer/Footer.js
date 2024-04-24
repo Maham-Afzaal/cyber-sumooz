@@ -4,15 +4,12 @@ import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Image from 'next/image'
 
-import styles from './Footer.module.css'
+import styles from './footer.module.css'
 import { Container } from '@mui/material'
-
-
-
 
 const Footer = () => {
     return (
-        <Box sx={{display: {xs: 'none', sm: 'block'}}}>
+        <Box sx={{display:'block'}}>
             <Box className={styles.Shadow}>
                 <Box className={styles.Blue}>
                     <Box className={styles.FlexBox}>
@@ -49,10 +46,10 @@ const Footer = () => {
                     </Box>
                 </Box>
             </Box>
-            <Box className={styles.BottomFooter} sx={{ backgroundColor: 'black', color: 'white', p: 1, pl:5 }}>
-                <Container>
-                    <Typography variant="body1" >All Rights Reserved 2022</Typography>
-                </Container>
+            <Box className={styles.BottomFooter} sx={{ display:'flex',justifyContent:'space-between',backgroundColor: 'black', color: 'white', p: 1, pl:5 }}>
+            
+                    <Typography variant="body1" >All Rights Reserved 2023</Typography>
+                    <Typography variant="body1" >Maham Afzaal</Typography>
             </Box>
         </Box>
     )

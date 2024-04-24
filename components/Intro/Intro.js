@@ -32,6 +32,7 @@ const Intro = () => {
                                 alt="logo"
                                 height={350}
                                 width={350}
+                                layout="intrinsic"
                             />
                         </Box>
                         {/* <Box className={styles.Play}>

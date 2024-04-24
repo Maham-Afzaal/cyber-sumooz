@@ -1,0 +1,105 @@
+.characterBox{
+    margin-top: 150px;
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 100px rgba(0, 209, 255, 0.75));
+    background-color: linear-gradient(96.81deg, #2E353C 44.67%, #364049 90.52%);
+
+}
+.characterBox2{
+    background-color: #0FDDEC;
+    clip-path: polygon(0 6%, 37% 6%, 63% 0, 100% 4%, 100% 100%, 28% 100%, 0 90%);  
+      background-color: linear-gradient(96.81deg, #2E353C 44.67%, #364049 90.52%);
+    padding: 3px;
+    padding-top: 20px;
+
+}
+.characShadowBox2{
+    position: relative;
+    background-color: #2E363D;
+    clip-path: polygon(0 6%, 37% 6%, 63% 0, 100% 4%, 100% 100%, 28% 100%, 0 90%); 
+}
+.characterBox1 {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    background: linear-gradient(93.98deg, #2DEADE 30.29%, #15C8EA 45.94%, #0AB8EF 57.21%);
+    box-shadow: 0px 0px 25px #15C8EA;
+    border-radius: 5px;
+    padding: 5px;
+    border: 3px solid #02DAF8;
+    z-index: 10;
+    width: 40%;
+}
+.Ability {
+    margin-top: 15px;
+    background: linear-gradient(151.64deg, #3E5258 3.51%, #475869 67.88%);
+    padding: 20px 20px 20px 40px;
+    width: fit-content;
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 5%, 97% 5%, 97% 75%, 100% 75%, 100% 100%, 0 100%, 0 0)
+}
+.Image{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 100% 100%, 10% 100%, 0 91%, 0 0);
+}
+.AbilityDetail {
+    margin: 10px 2px 25px 20px;
+}
+
+.GridLines {
+    /* width: 100px; 
+    height: 100px;  */
+    background: 
+      linear-gradient(to right, black 1px, transparent 1px) 0 0,
+      linear-gradient(to bottom, black 1px, transparent 1px) 0 0,
+      linear-gradient(to right, black 1px, transparent 1px) 0 100%,
+      linear-gradient(to bottom, black 1px, transparent 1px) 100% 0;
+    background-size: 20px 20px; 
+  }
+  .CharacterList {
+    height: 100%;
+}
+.CharacListBox{
+    margin-top: 10px;
+    margin-bottom: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    height: 100%;
+
+}
+.CollectBox{
+    border-radius: 9px;
+}
+.Collect{
+    border-radius: 9px;
+}
+.SelectCharacter{
+    display: flex;
+    align-items: center;
+}
+
+.SquareImage{
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .characterBox1 {
+        right: 10px;
+        top: 10px;
+        width: 80%;
+    }
+}

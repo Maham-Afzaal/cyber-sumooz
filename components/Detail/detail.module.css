@@ -1,0 +1,46 @@
+.BlueBox{
+    filter: drop-shadow(0px 5px 40px #0ff);
+    overflow: hidden; /* Prevent horizontal scrolling */
+}
+.rectangle{
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 100% 88%, 84% 100%, 52% 100%, 43% 91%, 23% 91%, 14% 100%, 0 100%);    
+    border-radius: 7px;
+    padding: 6px;
+    background-color: #1BE4FF;
+}
+.rectangleInner{
+    padding: 6px;
+    background-color: #17D2F3;
+    border-radius: 7px;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 100% 88%, 84% 100%, 52% 100%, 43% 91%, 23% 91%, 14% 100%, 0 100%); 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   white-space: nowrap;
+}
+.animatedText {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 10px;
+    animation: moveLine 4s linear infinite; /* Adjust duration as needed */
+  }
+@keyframes moveLine {
+    /* 0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%); 
+      } */
+      from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(0%);
+      }
+      to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+  }
+  

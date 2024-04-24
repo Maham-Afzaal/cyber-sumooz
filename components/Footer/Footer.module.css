@@ -3,7 +3,6 @@
     margin-top: 150px;
 }
 
-
 .FlexBox{
     background: linear-gradient(96.73deg, #3D5867 5.12%, #473C43 86.39%);
     clip-path: polygon(0 6%, 15% 0, 16% 7%, 98% 14%, 100% 23%, 100% 100%, 83% 100%, 59% 100%, 34% 100%, 22% 100%, 10% 100%, 0 100%);
@@ -17,17 +16,12 @@
     clip-path: polygon(0 6%, 15% 0, 16% 7%, 98% 14%, 100% 23%, 100% 100%, 83% 100%, 59% 100%, 34% 100%, 22% 100%, 10% 100%, 0 100%);
 }
 
-
 .Heading {
     font-weight: 900;
-    /* font-size: 60px; */
     line-height: 73px;
-    /* identical to box height */
     color: #FFFFFF;
     text-shadow: 0px 0px 25px rgba(177, 254, 15, 0.25);
 }
-
-
 .Box {
     width: 50%;
     padding: 20px;
@@ -80,4 +74,17 @@
     margin-top: 20px;
     color: #FFFFFF;
     margin-left: 20px;
+}
+@media screen and (max-width:600px){
+    .Box {
+        width: 100%;
+        /* padding: 20px;
+        position: relative; */
+    }
+    .Sumo{
+        display: none;
+    }
+    .ButtonBox{
+        flex-wrap: wrap;
+    }
 }

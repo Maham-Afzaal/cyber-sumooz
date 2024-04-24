@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Header/Header'
-import Detail from '../components/ShortDetail/Detail'
+import Detail from '../components/Detail/Detail'
 import { Container } from '@mui/material'
 import Intro from '../components/Intro/Intro'
-import Collection from '../components/Collection/Collection'
-import Characters from '../components/Characters/Characters'
+import CollectionSumos from '../components/CollectionSumos/CollectionSumos'
+import Characters from '../components/character/Character'
 import RoadMap from '../components/RoadMap/RoadMap'
 import Team from '../components/Team/Team'
-import FAQS from '../components/FAQS/FAQS'
+import FAQ from '../components/FAQ/FAQ'
 import Footer from '../components/Footer/Footer'
 
 export default function Home() {
@@ -25,12 +25,12 @@ export default function Home() {
         <Detail />
         <Intro />
       </Container>
-      <Collection />
+      <CollectionSumos />
       <Container>
         <Characters />
         <RoadMap />
         <Team />
-        <FAQS />
+        <FAQ />
       </Container>
       <Footer />
     </div>

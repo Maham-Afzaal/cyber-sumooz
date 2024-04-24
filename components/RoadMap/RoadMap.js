@@ -1,47 +1,108 @@
-import React from 'react'
-import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-import styles from './RoadMap.module.css'
-import {useInView } from 'react-intersection-observer'
-
-
+"use client";
+import React from "react";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import styles from "./roadmap.module.css";
+import { motion } from "framer-motion";
 
 const RoadMap = () => {
-
-    const { ref: myRef1, inView : visible1 } = useInView();
-    const { ref: myRef2, inView : visible2 } = useInView();
-    const { ref: myRef3, inView : visible3 } = useInView();
-
-    return (
-        <Box sx={{ position: 'relative' }} >
-            <Typography variant="h4" className={styles.RoadMap} sx={{ color: 'white', width: '100%', textAlign: 'center', fontSize: {xs: '30px', sm: '35px', md: '60px '}, my:2 }}>[ROAD MAP]</Typography>
-            <Box className={styles.Road} sx={{flexDirection: {xs: 'column', md: 'row'}}}>
-                <Box className={styles.Launch} sx={{width: {md: '50%', xs: '100%'}, m: 2, mr:3}}>
-                    <Typography variant="h4" className={styles.RoadMap2} sx={{ color: 'white',fontSize: {xs: '20px', sm: '30px', md: '40px '} }}>[Launch Beta V1.0]</Typography>
-                    <Typography variant="h5" sx={{ color: 'white',fontSize: {xs: '20px', sm: '30px', md: '40px '} }}>ETA September , 2022</Typography>
-                </Box>
-                <Box className={styles.timeline} sx={{width: {md: '50%', xs: '100%'}}}>
-                    <Box ref={myRef1} className={`${styles.container} ${styles.right}`}>
-                        <Box className={`${styles.content} ${visible1? styles.slideLeft: ''}`}>
-                            <Typography variant="body1" sx={{ color: "white" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Typography>
-                        </Box>
-                    </Box>
-                    <Box ref={myRef2} className={`${styles.container} ${styles.right}`}>
-                        <Box className={`${styles.content} ${visible2? styles.slideLeft: ''}`}>
-                            <Typography variant="body1" sx={{ color: "white" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Typography>
-                        </Box>
-                    </Box>
-                    <Box ref={myRef3} className={`${styles.container} ${styles.right}`}>
-                        <Box className={`${styles.content} ${visible3? styles.slideLeft: ''}`}>
-                            <Typography variant="body1" sx={{ color: "white" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</Typography>
-                        </Box>
-                    </Box>
-
-                </Box>
-
-            </Box>
+  return (
+    <Box sx={{ overflow: "hidden" }}>
+      <Typography variant="h4" color="white" textAlign="center">
+        [Road Map]
+      </Typography>
+      <Box
+        className={styles.launchMapBox}
+        sx={{ flexDirection: { xs: "column", md: "row" } }}
+      >
+        <Box
+          className={styles.launchMapBox1}
+          sx={{ alignSelf: { xs: "left", md: "center" } }}
+        >
+          <Typography variant="h4" color="white" textAlign="center">
+            [Launch Beta V1.0]
+          </Typography>
+          <Typography variant="h5" color="white" textAlign="center">
+            ETA September , 2022
+          </Typography>
         </Box>
-    )
-}
+        <Box className={styles.launchMapBox2}>
+          <Box sx={{ margin: "16px" }} className={styles.container}>
+            <motion.div
+              whileInView={{
+                x: [200, 0],
+                opacity: [0, 1],
+              }}
+              transition={{ duration: 0.5, ease: "easeInOut", loop: Infinity }}
+            >
+              <Box sx={{ margin: "16px" }} className={styles.divBox}>
+                <Typography
+                  variant="body1"
+                  color="white"
+                  sx={{ marginTop: "15px" }}
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </Typography>
+              </Box>
+            </motion.div>
+          </Box>
+          <Box sx={{ margin: "16px" }} className={styles.container}>
+            <motion.div
+              whileInView={{
+                x: [200, 0],
+                opacity: [0, 1],
+              }}
+              transition={{ duration: 0.5, ease: "easeInOut", loop: Infinity }}
+            >
+              <Box sx={{ margin: "16px" }} className={styles.divBox}>
+                <Typography
+                  variant="body1"
+                  color="white"
+                  sx={{ marginTop: "15px" }}
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </Typography>
+              </Box>
+            </motion.div>
+          </Box>
+          <Box sx={{ margin: "16px" }} className={styles.container}>
+            <motion.div
+              whileInView={{
+                x: [200, 0],
+                opacity: [0, 1],
+              }}
+              transition={{ duration: 0.5, ease: "easeInOut", loop: Infinity }}
+            >
+              <Box sx={{ margin: "16px" }} className={styles.divBox}>
+                <Typography
+                  variant="body1"
+                  color="white"
+                  sx={{ marginTop: "15px" }}
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </Typography>
+              </Box>
+            </motion.div>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  );
+};
 
-export default RoadMap
+export default RoadMap;
