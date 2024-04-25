@@ -5,7 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Box from '@mui/material/Box'
-import styles from './Faq.module.css'
+import styles from './faq.module.css'
 
 
 function FAQList({ title, detail, number }) {

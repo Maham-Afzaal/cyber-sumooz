@@ -4,7 +4,7 @@ import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Image from 'next/image'
 
-import styles from './Footer.module.css'
+import styles from './footer.module.css'
 import { Container } from '@mui/material'
 
 const Footer = () => {

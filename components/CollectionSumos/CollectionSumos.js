@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
-import styles from './Collection.module.css';
+import styles from './collection.module.css';
 
 
 const collection = [
