@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import styles from "./header.module.css";
+import styles from "./Header.module.css";
 import { AppBar, Button, Toolbar, Container, IconButton, Menu, MenuItem } from "@mui/material";
 import Image from "next/image";
 import MenuIcon from "@mui/icons-material/Menu";

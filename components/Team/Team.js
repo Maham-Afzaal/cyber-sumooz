@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import styles from "./team.module.css";
+import styles from "./Team.module.css";
 import Image from "next/image";
 
 const Team = () => {

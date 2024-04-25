@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import styles from './character.module.css'
+import styles from './Character.module.css'
 import Image from 'next/image'
 // import CharacterButton from '../Controls/CharacterButton'
 import { Grid } from '@mui/material'

@@ -3,7 +3,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import styles from "./detail.module.css";
+import styles from "./Detail.module.css";
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 
 const Detail = () => {
