@@ -3,7 +3,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
-import styles from "./Roadmap.module.css";
+import styles from "./RoadMap.module.css";
 
 const RoadMap = () => {
   return (
