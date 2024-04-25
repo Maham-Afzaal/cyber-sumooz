@@ -3,8 +3,8 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import styles from "./Detail.module.css";
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
+import styles from './Detail.module.css';
 
 const Detail = () => {
   return (
